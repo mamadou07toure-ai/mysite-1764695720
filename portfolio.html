@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BonPlan Architecture</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <!-- Portfolio Header -->
+    <section class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6 text-gray-900">NOTRE PORTFOLIO</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Découvrez nos réalisations les plus marquantes, alliant innovation technique et design exceptionnel.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/architecture/640x360/4" alt="Résidence moderne" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">Résidence Le Corbusier</h3>
+                            <p class="text-gray-200 text-sm">Conception contemporaine avec intégration paysagère</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/office/640x360/5" alt="Bureau d'entreprise" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">Siège Social TechnoCorp</h3>
+                            <p class="text-gray-200 text-sm">Architecture d'entreprise durable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/cityscape/640x360/6" alt="Appartement urbain" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">Loft Industriel Urbain</h3>
+                            <p class="text-gray-200 text-sm">Rénovation d'espace industriel en habitat moderne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/workspace/640x360/7" alt="Espace coworking" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">SpaceLab Coworking</h3>
+                            <p class="text-gray-200 text-sm">Espace de travail collaboratif innovant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/indoor/640x360/8" alt="Design intérieur" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">Hôtel Signature</h3>
+                            <p class="text-gray-200 text-sm">Design intérieur premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg hover-lift">
+                    <img src="http://static.photos/resaurant/640x360/9" alt="Restaurant gastronomique" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-white text-lg font-bold mb-2">Bistro Moderne</h3>
+                            <p class="text-gray-200 text-sm">Restaurant aux lignes épurées</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Request Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">INSPIRÉ PAR NOS RÉALISATIONS ?</h2>
+                <p class="text-xl mb-8">Démarrons la conception de votre projet dès aujourd'hui</p>
+                <a href="/contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition duration-300 font-semibold text-lg">Démarrer mon projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
